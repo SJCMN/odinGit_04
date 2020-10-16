@@ -1,0 +1,90 @@
+body {
+    background: #35363A;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 81.25%;
+    color: var(--ntp-primary-text-color), rgb(218, 220, 224);
+    display: block;
+    }
+
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: rgb(218,220,224);
+
+}
+
+.appIconLink {
+    color: rgb(218,220,224);
+    fill: currentColor; 
+}
+
+a:link {
+    color: rgb(218,220,224);
+}
+
+.primaryLinks:hover {
+    color: rgb(218,220,224);
+    border-bottom: 1px solid;
+    text-decoration: 1px solid;
+}
+
+.secondaryLinks:hover {
+    background-color: rgba(232,234,237,.1);
+}
+
+
+html {
+    --google-grey-refresh-200-rgba: 232,234,237,.1;
+    --google-grey-refresh-300-rgb: rgb(218,220,224);
+    --google-grey-refresh-500-rgb: 154,160,166;
+    --google-grey-900-rgb: 32,33,36;
+    --google-blue-refresh-300-rgb: 138,180,248;
+}
+
+html {
+    --ntp-background-override-color: var(--google-grey-900);
+    --ntp-hover-background-color: rgba(var(--google-grey-200-rgb), .1);
+    --ntp-primary-text-color: var(--google-grey-refresh-300);
+    --ntp-secondary-text-color: var(--google-grey-refresh-500);
+    --ntp-selected-primary-text-color: var(--google-blue-refresh-300);
+}
+
+#oneGoogleBar {
+    height: 56px;
+    display: block;
+}
+
+header {
+    min-width: 350px;
+    position: relative;
+    height: 52px;
+    padding: 4px;
+    background-color: transparent;
+    display: flex;
+    transition: box-shadow 250ms;
+}
+
+.headerLinks {
+    position: absolute;
+    top: 0px;
+    width: 328px;
+    z-index: 991;
+    height: 0px;
+    margin-top: 57px;
+    right: 0px;
+    margin-right: 4px;
+    transition: height 0.3s ease-in-out 0s;
+}
+
+#backgroundImage {
+    border: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+

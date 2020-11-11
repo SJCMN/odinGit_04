@@ -265,7 +265,7 @@ input {
 }
 
 .voiceSearch {
-    background: url(chrome://new-tab-page/icons/googlemic_clr_24px.svg) no-repeat center;
+    background: url(https://raw.githubusercontent.com/SJCMN/odinGit_04/6e0d285e59b4fcc3738805ffb32acd23d97b74dd/googlemic_clr_24px.svg) no-repeat center;
     background-size: 21px 21px;
     border: none;
     border-radius: 2px;
@@ -273,7 +273,6 @@ input {
     height: 100%;
     outline: none;
     padding: 0;
-    pointer-events: auto;
     position: absolute;
     right: 16px;
     width: 26px;

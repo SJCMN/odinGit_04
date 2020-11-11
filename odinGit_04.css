@@ -1,40 +1,3 @@
-body {
-    background: #35363A;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 81.25%;
-    color: var(--ntp-primary-text-color), rgb(218, 220, 224);
-    display: block;
-    }
-
-
-
-a {
-    outline: none;
-    text-decoration: none;
-    color: rgb(218,220,224);
-
-}
-
-.appIconLink {
-    color: rgb(218,220,224);
-    fill: currentColor; 
-}
-
-a:link {
-    color: rgb(218,220,224);
-}
-
-.primaryLinks:hover {
-    color: rgb(218,220,224);
-    border-bottom: 1px solid;
-    text-decoration: 1px solid;
-}
-
-.secondaryLinks:hover {
-    background-color: rgba(232,234,237,.1);
-}
-
 
 html {
     --google-grey-refresh-200-rgba: 232,234,237,.1;
@@ -52,32 +15,14 @@ html {
     --ntp-selected-primary-text-color: var(--google-blue-refresh-300);
 }
 
-#oneGoogleBar {
-    height: 56px;
+body {
+    background: #35363A;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 81.25%;
+    color: var(--ntp-primary-text-color), rgb(218, 220, 224);
     display: block;
-}
-
-header {
-    min-width: 350px;
-    position: relative;
-    height: 52px;
-    padding: 4px;
-    background-color: transparent;
-    display: flex;
-    transition: box-shadow 250ms;
-}
-
-.headerLinks {
-    position: absolute;
-    top: 0px;
-    width: 328px;
-    z-index: 991;
-    height: 0px;
-    margin-top: 57px;
-    right: 0px;
-    margin-right: 4px;
-    transition: height 0.3s ease-in-out 0s;
-}
+    }
 
 #backgroundImage {
     border: none;
@@ -87,4 +32,249 @@ header {
     width: 100%;
 }
 
+#oneGoogleBar {
+    height: 56px;
+    display: block;
+    z-index: 989;
+}
 
+header {
+    min-width: 350px;
+    position: relative;
+    height: 64px;
+    padding: 8px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 250ms;
+    z-index: 990;
+}
+
+.headerLinks {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    flex-grow: 1;
+    top: 0px;
+    z-index: 991;
+    height: 48px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    right: 0px;
+    bottom: 20px;
+    margin-right: 4px;
+    transition: height 0.3s ease-in-out 0s;
+}
+
+.primaryLinks {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    width: 130px;
+    z-index: 992;
+    height: 48px;
+    margin-top: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    justify-content: flex-end;
+    padding-right: 4px;
+    padding-left: 30px;
+    
+}
+
+.gLink, .iLink {
+    position: relative;
+    top: 10px;
+    z-index: 993;
+    height: 26px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-right: 10px;
+
+}
+
+.iLink {
+
+}
+
+.secondaryLinks {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    width: 130px;
+    z-index: 992;
+    height: 48px;
+    margin-top: 10px;
+    margin-right: 5px;
+    justify-content: flex-end;
+    padding-right: 5px;
+    align-content: center;
+    right: 55px;
+}
+
+.appLink, .profileLink {
+    width: 40px;
+    z-index: 993;
+    margin-top: 10px;
+}
+
+.appLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.profileLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    padding: 4px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    left: 20px;
+}
+
+.pLink {
+    position: relative;
+    height: 32px;
+    width: 32px;
+}
+
+.profileImage {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: rgb(218,220,224);
+}
+
+.appIconLink {
+    position: relative;
+    color: rgba(255,255,255, .87);
+    fill: currentColor; 
+    height: 26px;
+    width: 26px;
+    background-size: 36px 36px;
+}
+
+a:link {
+    color: rgb(218,220,224);
+}
+
+.pLinks:hover {
+    color: rgb(218,220,224);
+    text-decoration: underline;
+}
+
+.appLink:hover { 
+    background-color: rgba(232,234,237,0.08)
+}
+
+.profileLink:hover {
+    background-color: rgba(232,234,237,0.08)
+}
+
+#content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+    position: relative;
+}
+
+#logo {
+    margin-bottom: 38px;
+    height: 92px;
+    width: 272px;
+}
+
+.logoBox {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logo {
+    background-color: rgb(218,220,224);
+    mask-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg);
+    -webkit-mask-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg);
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    border-radius: 24px;
+    height: 44px;
+    width: 561px;
+}
+
+input {
+    font-size: 16px;
+    height: 100%;
+    outline: none;
+    padding-inline-end: 40px;
+    padding-inline-start: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.searchBox {
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    z-index: 3;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 400px;
+}
+
+.searchGlass {
+    position: relative;
+    padding-left: 8px;
+    padding-right: 13px;
+    color: #9AA0A6;
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+    fill: currentColor;
+}
+
+.voiceSearch {
+    background: url(chrome://new-tab-page/icons/googlemic_clr_24px.svg) no-repeat center;
+    background-size: 21px 21px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    right: 16px;
+    width: 26px;
+}
